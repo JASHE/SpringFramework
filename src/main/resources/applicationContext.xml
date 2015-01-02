@@ -18,12 +18,16 @@
     http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
  	
     <mvc:annotation-driven />  
-  
+  	<aop:aspectj-autoproxy />
     <!-- <mvc:resources mapping="/resources/**" location="/resources/" />  -->
     <context:component-scan base-package="com.spring" />
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
         <property name="prefix" value="/" />  
         <property name="suffix" value=".jsp" />  
     </bean>
+    
+    <!-- General Beans -->
+ 	<bean name="helloWorld" class="com.spring.aop.impl.HelloWorldImpl" />
+ 	<bean name="logAspect" class="com.spring.aop.aspect.LoggingAspect"></bean>
  
 </beans>
