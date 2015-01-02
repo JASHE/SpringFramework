@@ -1,6 +1,6 @@
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <title>Login</title>
 </head>
@@ -14,7 +14,7 @@
 				alert('Please Enter user name');
 			} else if(password == null || password == ''){
 				alert('Please Enter Password');
-			}else {
+			} else {
 				$("#form1").submit();
 			}
 		});
@@ -29,7 +29,7 @@
 <div id="body" class="body" style="width:100%;height:85%;">
 <section class="container">
     <div>
-      <h1>Login to Web App</h1>
+      <h1>Please Login to Web App</h1>
       <form method="post" action="welcome.php" id="form1">
         <p><input type="text" name="login" value="" placeholder="Username or Email" id="userName"></p>
         <p><input type="password" name="password" value="" placeholder="Password" id="password"></p>
